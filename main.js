@@ -11,8 +11,23 @@ $("h1").css("color","red");
     //     $("h1").css("color","red");
     // })
 
-$('h1').html('new text');
+// $('h1').html('new text');
 
 $('#btn_start').click(function(){
-    $('#message').html('Message')
-})
+    $('#message')
+        .html('Message')
+        .css('background-color','green')
+        .parent()
+        .css('background-color','gold')
+        .width(150)
+        .height(80)
+});
+
+//так не работает
+// $('#btn_start').click(
+//     $('#message').html('Message')
+// )
+
+$('#btn_reset').click(function() {
+    location.reload()
+});
