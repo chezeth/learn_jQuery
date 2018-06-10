@@ -52,3 +52,32 @@
 // //сложный селектор разбиваем на простые что бы все браузеры точно видели
 // $(".content div input:disabled");
 // $(".content div").find("input:disabled");
+
+//---lesson 3
+
+// $(".box").css({'color':'green',
+//                 'font-size':'12px',
+//                 'margin-left':'10px'})
+// $(".box").css({color:'green',
+//                 fontSize:'12px',
+//                 marginLeft:'10px'})
+
+// $("#content").css('height',function(i,value){
+//     parseFloat(value)*1.2;
+// })
+
+// $("#content").addClass('name')
+// $("#content").removeClass('box')
+
+//придается значение display:none
+// $("#content").toggle()
+
+// //дичь не рабочая
+// var b='3';
+//     a=function(){
+//     b=$("h1+p").attr(name);
+//     return b;  
+//   }
+// alert(a)
+
+$("h1+p").attr('name','cool');
