@@ -80,4 +80,12 @@
 //   }
 // alert(a)
 
-$("h1+p").attr('name','cool');
+// $("p").attr('name','cool');
+// $("p").removeAttr('name');
+
+// var c=$("img").attr('alt');
+// alert(c);
+
+$("img").css('height','200px');
+$("img").attr('src','../../../pictures/ocean/z_29afcadf.jpg');
+
