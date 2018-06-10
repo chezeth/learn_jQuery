@@ -35,3 +35,20 @@
 // });
 
 //---lesson 2
+
+// $("#content").css("color", "red");
+// $(".wrapper").css("color", "red");
+// $("h1,h2").css("color", "red");
+// $("article h2").css("color", "red");
+// $("article").find("h2").css("color","red");
+// //выбирает п не внутри ш1 а первый после ш1
+// $("h1+p").css("color", "red"); 
+// $("#content").prev().css("color", "red");
+// $("#content").next().css("color", "red");
+// $("*").prev().css("color", "red");
+// $("article>h2").css("color", "red");
+// $("article>*").css("color", "red");
+
+// //сложный селектор разбиваем на простые что бы все браузеры точно видели
+// $(".content div input:disabled");
+// $(".content div").find("input:disabled");
