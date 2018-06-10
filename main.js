@@ -89,3 +89,20 @@
 $("img").css('height','200px');
 $("img").attr('src','../../../pictures/ocean/z_29afcadf.jpg');
 
+//---Lesson 4
+
+// $("a").click(function(eva){
+//     alert('Hello!');
+//     // eva.preventDefault();
+//     // eva.stopPropagation();
+//     return false;
+// });
+
+// $("header").click(function(eva){
+//     alert('Hello 2!!!');
+// });
+
+$("#quantity").keyup(function() {
+    var value=$(this).val();
+    $("#msg").text(value);
+});
