@@ -106,3 +106,33 @@ $("#quantity").keyup(function() {
     var value=$(this).val();
     $("#msg").text(value);
 });
+
+//---Lesson 5
+// $(".anim").hide("slow");
+// $(".anim").click(function() {
+//     $(this).hide("slow");
+// })
+
+// $(".anim").hide("slow",function() {
+//     alert("4ekogo");
+// })
+
+// $(".anim").click(function() {
+//     $(this).hide("slow",function() {
+//         alert('gogogo')
+//     });
+// })
+
+// $("#stick").click(function() {
+//     $("#hide").slideDown("slow");
+// })
+
+function changeClass() {
+    $(this).prev().toggleClass('active')
+}
+$(function(){
+    $("h2").click(function() {
+        $(this).next().slideToggle();
+        $(this).toggleClass('active');
+    })
+})
