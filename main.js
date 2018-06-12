@@ -127,12 +127,14 @@ $("#quantity").keyup(function() {
 //     $("#hide").slideDown("slow");
 // })
 
-function changeClass() {
-    $(this).prev().toggleClass('active')
-}
+//не понятно для чего эта ф-ция
+// function changeClass() {
+//     $(this).prev().toggleClass('active');
+// }
 $(function(){
     $("h2").click(function() {
         $(this).next().slideToggle();
-        $(this).toggleClass('active');
+        //не понятно для чего клас 'ектив'
+        // $(this).toggleClass('active');
     })
 })
