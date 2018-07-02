@@ -63,7 +63,7 @@
 //                 marginLeft:'10px'})
 
 // $("#content").css('height',function(i,value){
-//     parseFloat(value)*1.2;
+//     return parseFloat(value)*1.2;
 // })
 
 // $("#content").addClass('name')
@@ -137,4 +137,92 @@ $(function(){
         //не понятно для чего клас 'ектив'
         // $(this).toggleClass('active');
     })
-})
+});
+
+//---Lesson 6
+// $(".anim").click(function() {
+//     $(this).fadeOut(2200);
+//     $(this).fadeIn(2200);
+// })
+
+// $(".anim").click(function() {
+//     $(this).fadeToggle(2200);
+// })
+
+// $(".anim").click(function() {
+//     $(this).fadeTo(2200,0.4,function() {
+//         alert('done');
+//     });
+// })
+
+// $(".anim")
+
+// $(".anim").animate({
+//     'opacity':'hide'
+// })
+// $(".anim").animate({
+//     'opacity':'show'
+// })
+// $(".anim").animate({
+//     'opacity':'0.5',
+//     'height':'50px',
+//     'width':'250px'
+// })
+// $(".anim").animate({
+//     'opacity':'-=0.2',
+//     'height':'+=50px',
+//     'width':'-=25px'
+// })
+
+// $(".anim").animate({'height':'+=50px'})
+//             // .stop
+//             .animate({'width':'-=25px'},{queue:false});
+
+// $.fx.off=true;
+
+//---Lesson 7
+// var $myDiv=$('<div id="my" class="page">Hello</div>').appendTo('.anim');
+
+// так быстрее
+// var $myDiv=$('<div>Hello</div>',{'id':'my','class':'page'}).appendTo('.anim');
+
+var $myDiv=$('<div>Hello</div>').attr({'id':'my','class':'page'}).appendTo('.anim');
+
+//самый быстрый способ, но это просто js
+// var myDiv=createElement("div");
+//     myDiv.id="my";
+//     myDiv.className="page";
+
+// $("p").after("<hr/>")
+// $("<hr/>").insertAfter("p")
+
+// $("<hr/>").insertBefore("p");
+// $("p").append("<hr/>")
+// $("p").append("<span>gfhjdkhlgfkl</span>");
+// $("<p>fghfhfFFFFFFnfhg</p>").prependTo("#content");
+// $("<p>fghfhfFFFFFFnfhg</p>").appendTo("#content");
+// $("p").prepend("<span>gfhjdkhlgfkl</span>");
+
+//---Lesson 8
+// $(".second").replaceWith("<h2>New Text</h2>");
+// $("<h2>New Text</h2>").replaceAll(".inner");
+
+// $(".inner").wrap("<div class='new'>TEXT</div>");
+// $(".inner").wrapAll("<div class='new'>TEXT</div>");
+// заворачивает внутрь объекта
+// $(".inner").wrapInner("<div class='new'>TEXT</div>");
+
+$(".third").clone().appendTo(".first");
+
+// var p;
+// $("button").click(function() {
+//     if(p){
+//         p.appendTo("header");
+//         p=null;
+//     } else{
+//         p=$(".hello").detach();
+//     }
+// })
+
+// $(".third").empty();
+// $(".third").remove();

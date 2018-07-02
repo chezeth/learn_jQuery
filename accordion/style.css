@@ -1,0 +1,26 @@
+.ac{
+    border-top: 3px solid maroon;
+    border-left:3px solid maroon;
+    border-right: 3px solid maroon;
+    /* margin: 0.5rem 0 1rem 0; */
+    width: 30%;
+}
+
+.ac_h{
+    background-color: goldenrod;
+    border-bottom: 3px solid maroon;
+    cursor: pointer;
+    /* min-height: 3rem; */
+    /* line-height: 3rem; */
+    padding: 0 40%;
+}
+
+.ac_b{
+    display: none;
+    padding: 1rem;
+    border-bottom: 3px solid maroon;
+}
+
+.active{
+    color: blue;
+}
